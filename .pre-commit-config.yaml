@@ -45,4 +45,5 @@ ci:
   autoupdate_schedule: weekly
   autoupdate_commit_msg: '[pre-commit.ci] pre-commit automatically updated.'
   # Optionally list ids of hooks to skip on CI
-  # skip: [pylint]
+  # Note - pylint won't work in pre-commit CI, this is explained in https://pylint.pycqa.org/en/latest/user_guide/installation/pre-commit-integration.html.
+  skip: [pylint]
